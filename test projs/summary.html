@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>track attack</title>
+    <link rel="stylesheet" href="style.css">
+    <script type='module' src="summary.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type='module' src="chartTest.js" defer></script>
+</head>
+
+<body class="summary">
+    <header class="header">
+        <div>
+            <h1 class="title">Track Attack</h1>
+            <p> a media tracker</p>
+        </div>
+    </header>
+    <main class='grid'>
+        <section class='total'>
+            <h2>Total</h2>
+            <section class='block'>
+                <table>
+                    <tr>
+                        <th>Books</th>
+                        <td id='numB'></td>
+                    </tr>
+                    <tr>
+                        <th>Movies</th>
+                        <td id='numM'></td>
+                    </tr>
+                    <tr>
+                        <th>Pages</th>
+                        <td id='durB'></td>
+                    </tr>
+                    <tr>
+                        <th>Minutes</th>
+                        <td id='durM'></td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+        <section class='graphs'>
+            <h2>Graphs</h2>
+            <section class='block'>
+                <div class='wrap'>
+                    <canvas id='myChart'></canvas>
+                </div>
+            </section>
+        </section>
+        <section class='favs'>
+            <h2>Favorites</h2>
+            <section class='block'>
+                <table>
+                    <tr>
+                        <th>Book</th>
+                        <td id="favB">---</td>
+                    </tr>
+                    <tr>
+                        <th>Author</th>
+                        <td id='favCB'>---</td>
+                    </tr>
+                    <tr>
+                        <th>Movie</th>
+                        <td id='favM'>---</td>
+                    </tr>
+                    <tr>
+                        <th>Director</th>
+                        <td id='favCM'>---</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+        <section class='least-favs'>
+            <h2>Least Favorites</h2>
+            <section class='block'>
+                <table>
+                    <tr>
+                        <th>Book</th>
+                        <td id='favLB'>- - -</td>
+                    </tr>
+                    <tr>
+                        <th>Author</th>
+                        <td id='favLCB'>- - -</td>
+                    </tr>
+                    <tr>
+                        <th>Movie</th>
+                        <td id='favLM'>- - -</td>
+                    </tr>
+                    <tr>
+                        <th>Director</th>
+                        <td id='favLCM'>- - -</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
