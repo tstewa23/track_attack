@@ -23,3 +23,13 @@ const showValue = function (val) {
 vals.forEach((val) => {
     showValue(val)
 })
+
+const restart = document.querySelector('.restart')
+
+restart.addEventListener('click',
+    (event) => {
+        localStorage.clear()
+        location.reload(true);
+
+    }
+)
